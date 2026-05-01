@@ -12,3 +12,9 @@ En esta clase inicializo el Bloque de Inicialización estatico y el bloque de in
 En la clase paso dos valores por referencia, esto quiere decir que las variables que cambio, también realizan el cambio en las variables originales, por eso las variables toman la referencia de las originales. Minetras que en el paso por valor solo hago una copia de las originales sin modificarlas.
 ### Exception Handling
 En esta clase con la palabra `throws` anuncio que el programa tendrá una excepción, mientras que con `throw` lanzó la excepción que en este caso es cuando el númeor ingresado es mayor a 100. Todo lo evaluó en un `try-catch`.
+### Encapsulation
+En la encapsulación utilice los getters and setters para poder ingresar o cambiar datos de los atributos `private` e imprimirlos en el `Main`.
+### Inheritance
+En la herencia hice que las clases hijas `Carro` y `Camion` hereden los atributos y métodos de la clase padre `Vehiculo`. En cada clase hija sobreescribe los metodos colocando a cada métod el `@Override` para que se sepa que están sobreescritos. En el main instacié las clase y probe el Upcasting and Downcasting con las tres clases, en este último arroje una excepción para saber si el objeto `vehiculo` es un carro, pero como antes se habia dicho que `vehiculo` es un camion, lanza la excepción.
+### Polymorphism
+Utilice la clase padre `Figura` y las clases hija `Rectangulo`, `Circulo` y `Cuadrado`, al instanciar `rectangulo` lo hice como referencia de tipo `Figura` pero el objeto en si es un rectangulo. Al igual que con rectangulo con las otras instancias hice lo mismo. Para saber siuna variable es instancia dede alguna clase utilice el `instanceof`.
